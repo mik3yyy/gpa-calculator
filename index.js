@@ -14,7 +14,7 @@ app.get("/", function(req,res){
 app.listen(process.env.PORT||3000,function(){
   console.log("server is running");
 });
-app.post("/", function(req,res){
+app.post("/index.html", function(req,res){
   res.sendFile(__dirname+"/simulate.html");
 
 });
