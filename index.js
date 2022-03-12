@@ -15,12 +15,14 @@ app.get("/", function(req,res){
 app.post("/",function(req,res){
 
   amountOfCourses = req.body.amountOfCourses;
-  res.sendFile(__dirname+"/simulate.html");
+  console.log(amountOfCourses);
 
+  res.sendFile(__dirname+"/simulate.html");
+document.querySelector("h1.result").style.visibility="visible";
 
 });
 app.post("/simulate",function(req,res){
-
+  res.sendFile(__dirname+"/simulate.html");
   number=amountOfCourses;
     num=parseInt(num);
     num-=1;
