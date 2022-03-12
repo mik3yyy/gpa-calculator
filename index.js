@@ -6,7 +6,7 @@ const request = require("request");//remember to install request(npm i request)
 const app= express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-  var amountOfCourses;
+  var amountOfCourses,num;
 app.get("/", function(req,res){
   res.sendFile(__dirname+"/index.html");
 
@@ -20,7 +20,7 @@ app.post("/",function(req,res){
 
 });
 app.post("/simulate",function(req,res){
-  res.sendFile(__dirname+"/simulate.html")
+
   number=amountOfCourses;
     num=parseInt(num);
     num-=1;
