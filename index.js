@@ -22,7 +22,7 @@ app.post("/index.html", function(req,res){
 
 
 
-
+/*
 var number;
 $("button.input").click(function(){
 
@@ -158,3 +158,4 @@ for(i=0;i<number;i++)
 
 
 });
+*/
