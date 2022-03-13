@@ -34,7 +34,7 @@
   border-radius: 20%;
 }
 .visibility{
-  visibility: hidden;
+  visibility: visible;
 }
 .btn{
   padding: 0;
@@ -52,7 +52,7 @@ padding:  10px 75px 10px 75px;
 border-radius: 50%;
 }
 .result{
-  visibility: hidden;
+  visibility: visible;
 }
 
 .result-section{
