@@ -1,11 +1,5 @@
 
-#title{
 
-   padding:  20% 20% 0 20%;
-  text-align: center;
-  background-color: black;
-  color: grey;
-}
 .btn{
   margin: 30px;
   color: white;
@@ -13,19 +7,17 @@
 
 .body{
   text-align: center;
-  background-color: black;
-  color: grey;
+  background-color: #15133C;
+  font-weight:  bold ;
+  /* color: grey; */
 }
 #head{
   text-align: center;
-  background-color: black;
-  color: grey;
+  /* background-color: black; */
+  color: #F1EEE9;
    padding-bottom:  60px;
 }
-.padding{
-  padding-top:  30px;
-  /* padding-bottom:  60px; */
-}
+
 .list{
   margin-left: 10px;
   padding: 30px;
@@ -43,20 +35,86 @@
 .simulate{
   padding: 0 30% 0 30%;
 text-align: center;
-background-color: black;
+/* background-color: white; */
  /* width: 20px;  */
 }
-.btns{
-padding:  10px 75px 10px 75px;
-/* font-size: 2rem; */
-border-radius: 50%;
-}
-.result{
-  visibility: visible;
-}
+
+
 
 .result-section{
   background-color: black;
   color: white;
+  text-align: center;
+}
+/* NEW */
+.size{
+  max-width:  40%;
+  height: auto;
+  background-color: black;
+}
+body{
+
+  background-image: -webkit-linear-gradient(60deg, #DDDDDD 50%, #FF8C32 50%);
+  min-height: 950px;
+}
+
+.btn{
+  border: none;
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+}
+.fontUbuntu{
+  font-family: serif;
+  font-weight: bold;
+}
+.fontMontserrat{
+  font-family: "Montserrat", serif;
+}
+#title{
+  font-size: 4.5rem;
+
+
+}
+.label{
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+}
+.course{
+
+  padding-top:  0;
+  padding-bottom: 2px;
+  font-size: 1.5rem;
+
+}
+.btns{
+
+background-color:  #DDDDDD;
+}
+.btns:hover{
+  background-color: #FF8C32;
+}
+.color{
+color: white;
+margin:0px auto;
+
+    background-color:#FF8C32;
+
+    padding:10px;
+    border:2px solid black;
+}
+.padding{
+
+  padding-bottom:  30px;
+}
+ul{
+  list-style: none;
+}
+td{
+  padding-left: 220px;
+  padding-right: 70px;
+}
+.result{
   text-align: center;
 }
