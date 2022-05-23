@@ -53,7 +53,7 @@ mongoose.connect("mongodb+srv://admin-michael:Test123@cluster0.v9j4t.mongodb.net
 const userSchema = new mongoose.Schema({
   password: String,
   googleId: String,
-  name: String
+  username: String
 
 
 
@@ -93,7 +93,7 @@ passport.use(new GoogleStrategy({
     console.log(profile._json.name);
     User.findOrCreate({
       googleId: profile.id,
-      name: profile._json.name
+      username: profile._json.name
     }, function(err, user) {
       return cb(err, user);
     });
