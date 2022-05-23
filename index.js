@@ -49,7 +49,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://127.0.0.1:27017/userDB");
+mongoose.connect("mongodb+srv://admin-michael:Test123@cluster0.v9j4t.mongodb.net/userDB");
 const userSchema = new mongoose.Schema({
   email: String,
   password: String,
@@ -85,12 +85,12 @@ passport.deserializeUser(function(id, done) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://127.0.0.1:3000/auth/google/secrets"
+    callbackURL: "/auth/google/secrets"
     // userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
 
   },
   function(accessToken, refreshToken, profile, cb) {
-    console.log(profile._json.name);
+
     User.findOrCreate({
       googleId: profile.id,
       name: profile._json.name
@@ -143,7 +143,7 @@ app.get("/authenticate", function(req,res){
 var username;
 app.post("/authenticate",function(req,res){
   username= req.body.email;
-  
+
 });
 
 app.get("/login", function(req, res) {
