@@ -1,120 +1,781 @@
 
+ body{
 
-.btn{
-  margin: 30px;
-  color: white;
-}
-
-.body{
-  text-align: center;
-  background-color: #15133C;
-  font-weight:  bold ;
-  /* color: grey; */
-}
-#head{
-  text-align: center;
-  /* background-color: black; */
-  color: #F1EEE9;
-   padding-bottom:  60px;
-}
-
-.list{
-  margin-left: 10px;
-  padding: 30px;
-  color: blue;
-  background-color: black;
-  border-radius: 20%;
-}
-.visibility{
-  visibility: visible;
-}
-.btn{
-  padding: 0;
-  margin: 0;
-}
-.simulate{
-  padding: 0 30% 0 30%;
-text-align: center;
-/* background-color: white; */
- /* width: 20px;  */
-}
-
-
-
-.result-section{
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-/* NEW */
-.size{
-  max-width:  40%;
-  height: auto;
-  background-color: black;
-}
-body{
-
-  background-image: -webkit-linear-gradient(60deg, #DDDDDD 50%, #FF8C32 50%);
+  background-image: linear-gradient(0deg, #6738ff86 65%, #191919  35%  );
   min-height: 950px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.btn{
-  border: none;
-  min-height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border-color: transparent;
+.footer{
+  background-color: #191919;
 }
-.fontUbuntu{
-  font-family: serif;
-  font-weight: bold;
+input{
+  border-top: none;
+  border-left: none;
+  box-shadow: none;
 }
-.fontMontserrat{
-  font-family: "Montserrat", serif;
-}
-#title{
-  font-size: 4.5rem;
-
-
-}
-.label{
-  font-size: 1.5rem;
-  padding-top: 2.5rem;
-}
-.course{
-
-  padding-top:  0;
-  padding-bottom: 2px;
-  font-size: 1.5rem;
-
-}
-.btns{
-
-background-color:  #DDDDDD;
-}
-.btns:hover{
-  background-color: #FF8C32;
-}
-.color{
-color: white;
-margin:0px auto;
-
-    background-color:#FF8C32;
-
-    padding:10px;
-    border:2px solid black;
-}
-.padding{
-
-  padding-bottom:  30px;
-}
-ul{
-  list-style: none;
-}
-td{
-  padding-left: 220px;
-  padding-right: 70px;
-}
-.result{
+.login-button{
+  /* background-color: #020102; */
+  margin-top: 20px;
   text-align: center;
+}
+.card-body{
+  text-align: left;
+}
+.google-login{
+  /* background-color: #020102; */
+  text-align: center;
+}
+
+
+
+/* new css */
+         /* LANDING PAGE */
+#head{
+  background-color: #191919;
+}
+.button1{
+  color: #DDDDDD;
+}
+
+.setting{
+  background-color: #191919;
+     border-radius:  30px;
+     color:#DDDDDD;
+}
+
+        /*Input Page*/
+.input-page-label{
+      padding-bottom: 20px;
+
+
+
+}
+.input-page{
+  margin: 1rem;
+  border-radius: 20px;
+    background-color: white;
+    text-align: center;
+
+}
+.input-page-input{
+    width: 100%;
+    border-radius: 10px;
+    border: solid;
+    box-shadow: 0 3px black;
+    border-bottom: solid;
+    border-left: solid;
+}
+.input-div{
+  position: absolute;
+  top: 320px;
+}
+
+
+body .INPUT{
+  padding-left: 5%;
+  text-align: center;
+
+}
+/*
+
+
+} */
+.input-submit{
+  position: absolute;
+  margin-top: 280px;
+  margin-left: -40px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.input-submit:hover{
+  background-color: #6738ff86;
+
+}
+
+.CGPA{
+  position: absolute;
+  color: white;
+  margin-top: 270px;
+  /* margin-left: -30px; */
+  /* background-color:  #6738ff86; */
+
+}
+/* //result page */
+.result-table{
+  /* background-color: white; */
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 5%;
+  /* text-align: center; */
+}
+.result-td{
+  padding-right: 200px;
+}
+.result-title{
+
+  color: white;
+  /* background-color: pink; */
+
+  animation-name: result;
+  animation-duration: 4s;
+  line-height: 40%;
+  margin-top: 50px;
+
+}
+@keyframes result {
+  0%{
+    /* position:relative; */
+    transform: rotateX(90deg);
+    transform: rotateY(90deg);
+
+ }
+  50%{
+     /* position:relative; */
+    transform: rotateX(180deg);
+  transform: rotateX(180deg);
+   }
+  75%{
+     /* position:relative; */
+      transform: rotateX(90deg);
+    transform: rotateY(90deg);
+    }
+  100%{
+    /* position:absolute; */
+      transform: rotateX(0deg);
+      transform: rotateY(0deg);
+  }
+
+}
+
+/* ///AUTHENTICTION */
+
+.auth-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.auth-form{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.auth-h3{
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.auth-input{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline:none;
+  background: #f5f5f5;
+  font-size: 16px;
+}
+
+
+@media only screen and  (max-width: 600px) {
+
+  .navbar-toggler{
+    visibility: hidden;
+  }
+
+  .image{
+    /* top: 202px;
+    left: 290px; */
+
+    width: 190px;
+    position: absolute;
+    right: 0;
+    height: 140px;
+    animation-name: image-move ;
+    animation-duration: 3s ;
+  }
+  .title-image{
+    /* background-color: #FF8C32; */
+    top: 190px;
+    right: 0;
+    width: 200px;
+    position: absolute;
+    height: 140px;
+
+  }
+
+
+  @keyframes image-move {
+    0%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    50%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    75%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    100%{ position:absolute; top: 0px; visibility:visible; right: 0;}
+
+  }
+
+  .title{
+    top: 70px;
+    left: 30px;
+    position: absolute;
+    height: 250px;
+    text-align: left;
+    /* background-color: #FF8C32; */
+    color: azure;
+
+    /* font-size:xx-large; */
+  }
+  .typewriter {
+    /* color: #020102; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space:initial;
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  .title-button{
+    /* background-color: #FF8C32; */
+    display: inline;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+
+    /* visibility:collapse; */
+  }
+
+  .button1{
+    /* position: absolute; */
+    border-style:solid;
+    border-color: #fff0ff;
+    margin-right: 0;
+    /* position: absolute; */
+
+
+
+  }
+  .button1:hover{
+      background-color: #8964ff ;
+      border-style: none;
+  }
+
+  .button2{
+    background-color:  #fff0ff;
+    color:#020102;
+
+    /* position: absolute; */
+  }
+  #testimonials{
+    background-color: #8964ff;
+
+    position: absolute;
+    top: 330px;
+    text-align: center;
+    padding: 40px;
+    height: 500px;
+  }
+  .testimonial-image{
+    width: 400px;
+    height: 300px;
+  }
+  .footer{
+    position: relative;
+    text-align: center;
+    top: 770px;
+    height: 124px;
+    color: #DDDDDD;
+    /* background-color: #191919 ; */
+  }
+
+             /* SIMULATE PAGE */
+
+   .setting{
+     color: #DDDDDD;
+     padding: 50px;
+
+   }
+   .setting h1{
+     text-align: center;
+   }
+   .setting button{
+     text-align: center;
+     width: 100%;
+     margin-top: 20px;
+     background-color:#8964ff;
+   }
+  /*       INPUT PAGE        */
+  .input-page-label{
+        padding-bottom: 20px;
+
+
+
+  }
+  .input-page{
+    margin: 1rem;
+    border-radius: 20px;
+    text-align: left;
+    width: 40%;
+
+  }
+  .input-page-input{
+      width: 100%;
+      border-radius: 10px;
+
+  }
+  .input-h1{
+    /* text-align: center; */
+    position: absolute;
+    margin-left: 150px;
+    width: 300px;
+    margin-top: 70px;
+    /* color: blue; */
+
+}
+
+.CGPA{
+  position: absolute;
+  color: white;
+  margin-top: 220px;
+  /* margin-left: -30px; */
+  /* background-color:  #6738ff86; */
+  width: 100px;
+}
+.em{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 150px;
+  color: white;
+  width: 200px;
+  /* text-align: center; */
+}
+
+
+    /* Result Page */
+    .result-table{
+      /* background-color: white; */
+      position: absolute;
+      margin-top: 250px;
+      margin-left: 5%;
+      /* text-align: center; */
+    }
+}
+
+@media only screen and  (min-width: 600px) and (max-width: 772px) {
+
+    /* LANDING PAGE */
+  .image{
+    /* top: 202px;
+    left: 290px; */
+
+    width: 190px;
+    position: absolute;
+    right: 0;
+    height: 140px;
+    animation-name: image-move ;
+    animation-duration: 3s ;
+  }
+  .title-image{
+    /* background-color: #FF8C32; */
+    top: 190px;
+    right: 0;
+    width: 200px;
+    position: absolute;
+    height: 140px;
+
+  }
+
+
+  @keyframes image-move {
+    0%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    50%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    75%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    100%{ position:absolute; top: 0px; visibility:visible; right: 0;}
+
+  }
+
+  .title{
+    top: 80px;
+    left: 120px;
+    position: absolute;
+    height: 120px;
+    text-align: center;
+    /* background-color: #FF8C32; */
+    color: azure;
+
+    /* font-size:xx-large; */
+  }
+  .typewriter {
+    /* color: #020102; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space:initial;
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  .title-button{
+    /* background-color: #FF8C32; */
+    display: inline;
+    position: absolute;
+    top: 250px;
+    left: 35px;
+
+    /* visibility:collapse; */
+  }
+
+  .button1{
+    /* position: absolute; */
+    border-style:solid;
+    border-color: #fff0ff;
+    margin-right: 0;
+    /* position: absolute; */
+
+
+
+  }
+  .button1:hover{
+      background-color: #8964ff ;
+      border-style: none;
+  }
+
+  .button2{
+    background-color:  #fff0ff;
+    color:#020102;
+
+    /* position: absolute; */
+  }
+  #testimonials{
+    background-color: #8964ff;
+
+    position: absolute;
+    top: 330px;
+    text-align: center;
+    padding: 40px;
+    height: 500px;
+  }
+  .testimonial-image{
+    width: 400px;
+    height: 300px;
+  }
+  .footer{
+    position: relative;
+    text-align: center;
+    top: 770px;
+    height: 124px;
+    color: #DDDDDD;
+    /* background-color: #020102 ; */
+  }
+  /* LOGIN PAGE */
+  .col-sm-4{
+    padding: 0 0 0 0;
+
+  }
+  .col-sm-8{
+    padding: 0 0 0 0;
+  }
+
+
+                      /* // SIMULATE PAGE */
+  .setting{
+    color: #DDDDDD;
+    padding: 50px;
+    /* width: 500px */
+  }
+  .setting h1{
+    text-align: center;
+  }
+  .setting button{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color:#8964ff;
+  }
+
+            /* INPUT PAGE */
+
+
+.input-page{
+  margin: 1rem;
+  border-radius: 20px;
+    /* background-color: white; */
+    text-align: left;
+    width: 27%;
+
+}
+.input-page-input{
+    width: 100%;
+    border-radius: 10px;
+    border: solid;
+    box-shadow: 0 3px black;
+    border-bottom: solid;
+    border-left: solid
+}
+.input-div{
+  position: absolute;
+  top: 320px;
+}
+
+  /* Result-PAGE */
+  .result-table{
+    /* background-color: white; */
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 7%;
+
+    width: 60%;
+    /* text-align: center; */
+  }
+
+
+
+}
+@media only screen and  (min-width: 772px) and (max-width: 2000px) {
+
+  .image{
+    /* top: 202px;
+    left: 290px; */
+
+    width: 100%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    animation-name: image-move ;
+    animation-duration: 3s ;
+  }
+  .title-image{
+    /* background-color: #FF8C32; */
+    top: 12.5rem;
+    right: 0;
+    width: 20%;
+    position: absolute;
+    height: 25%;
+
+  }
+
+
+  @keyframes image-move {
+    0%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    50%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    75%{ position:relative; top: 20px;  visibility: hidden; right: 0;}
+    100%{ position:absolute; top: 0px; visibility:visible; right: 0;}
+
+  }
+
+  .title{
+    top: 40px;
+    /* left: 120px; */
+    width: 100%;
+    position: absolute;
+    height: 200px;
+    text-align: center;
+    /* background-color: #FF8C32; */
+    color: azure;
+
+    /* font-size:xx-large; */
+  }
+  h1{
+    font-size: 70px;
+  }
+  .typewriter {
+    /* color: #020102; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space:initial;
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  .title-button{
+    /* background-color: #FF8C32; */
+    display: inline;
+    position: absolute;
+     top: 280px;
+    /* left: 300px; */
+    width: 100%;
+    text-align: center;
+    /* visibility:collapse; */
+  }
+
+  .button1{
+    /* position: absolute; */
+    border-style:solid;
+    border-color: #fff0ff;
+    margin-right: 0;
+    /* position: absolute; */
+
+
+
+  }
+  .button1:hover{
+      background-color: #8964ff ;
+      border-style: none;
+  }
+
+  .button2{
+    background-color:  #fff0ff;
+    color:#020102;
+
+    /* position: absolute; */
+  }
+  #testimonials{
+    background-color: #8964ff;
+
+    position: absolute;
+    top: 330px;
+    text-align: center;
+    padding: 40px;
+    height: 500px;
+    width: 100%;
+  }
+  .testimonial-image{
+    width: 500px;
+    height: 500px;
+  }
+  .footer{
+    position: relative;
+    text-align: center;
+    top: 770px;
+    height: 124px;
+    color: #DDDDDD;
+    /* background-color: #020102 ; */
+  }
+   /* LOGIN PAGE */
+   .col-sm-4{
+    padding: 0 0 0 0;
+    height: 222px;
+    /* background-color: #ffffff; */
+    border-style: none;
+  }
+  .col-sm-8{
+    padding: 0 0 0 0;
+    display: block;
+    border-style: none;
+  }
+  .container{
+    /* background-color: #DDDDDD; */
+    text-align: center;
+    width: 50%;
+
+  }
+
+                                  /* SIMULATE */
+  .setting{
+    color: #DDDDDD;
+    padding: 50px;
+    width: 40%;
+    }
+  .setting h1{
+    text-align: center;
+  }
+  .setting button{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color:#8964ff;
+  }
+
+
+
+  @media only screen and  (min-width: 772px) and (max-width: 1200px){
+      /* SETTING PAGE */
+      .setting{
+        width:60%;
+      }
+
+
+
+  }
+
+  /* INPUT PAGE */
+  .input-page-label{
+        /* padding-bottom: 20px; */
+  width: 50%;
+
+
+  }
+  .input-page{
+    margin: 1rem;
+    border-radius: 20px;
+      /* background-color: pink; */
+      text-align: left;
+      width: 27%;
+
+
+      height: 20%;
+
+  }
+  .input-page-input{
+      width: 100%;
+      border-radius: 10px;
+      border: solid;
+      box-shadow: 0 3px black;
+      border-bottom: solid;
+      border-left: solid
+  }
+  .input-div{
+    position: absolute;
+    top: 320px;
+  }
+
+
+  /* RESULT PAGE */
+  .result-table{
+    /* background-color: white; */
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 5px;
+
+    /* margin-bottom: 5%; */
+    width: 100%;
+    /* text-align: center; */
+  }
+
+
 }

@@ -1,0 +1,29 @@
+<%-include("partials/header");-%>
+<div class="auth-container">
+    <form class="auth-form" onsubmit="sendEmail(); reset(); return false; " action="/" method="post" >
+      <h3 class="auth-h3">Enter Email</h3>
+      <Input class="auth-input" type="email"name="email" id="email" placeholder="Your email" required> </Input>
+      <button type="submit">Send</button>
+    </form>
+
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+ function sendEmail(){
+     Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "mikeokpechi@gmail.com",
+  Password : "B9184735EAB96BF411E0B7AF112CD6A0B90A",
+  To : document.getElementById("email").value,
+  From :'mikeokpechi@gmail.com',
+  Subject : "Verification email",
+  Body : "click to verify: https://gpa-simulator.herokuapp.com/register. Unable to click?, remove from spam if currently there"
+  }).then(
+  message => alert(message+"\nSUCCESSFUL\nA verification email has been sent")
+
+  );
+
+    }
+    
+  </script>
+  <%- include("partials/footer");-%>

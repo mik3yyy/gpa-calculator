@@ -1,37 +1,84 @@
 <%-include("partials/header"); -%>
+<!-- <h1 class="setting-title">Choose setting</h1> -->
+<div class="container setting" style="">
+  <h1 class="setting-title">Choose setting</h1>
+  <form class="setting-page " action="/simulate" method="post">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">
+        <h3>Name of simulation</h3>
+      </label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="i.e my first semester" name="simulate_name">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">
+        <h3>Select University</h3>
+      </label>
+      <select class="form-control" id="exampleFormControlSelect1" name="University" >
+        <option>none</option>
+        <option>Babcock University</option>
+        <option>Convenant University</option>
 
-<form class="fontUbuntu" action="/simulate" method="post">
-  <h1 id="title" class="text-center" >Calculate Gpa </h1>
-<div class="simulate">
-
-
-<button type="submit" name="button" class=" btns ">simulate</button>
-</div>
-<div class=" row  ">
-<% for(i= 0; i<NoOfCourses ;i++){ %>
-
-
-  <ul class=" col-lg-4 col-sm-6 color padding ">
-    <li class=" ">
-      <label class="course">Course name:<input class="course" type="text" name="name<%=i%>"  class="name"></label>
-
-    </li>
-    <li class=" ">
-      <label class="course">Course grade: <input class="course" type="text" name="grade<%=i%>"  class="grade"></label>
-
-    </li>
-    <li class=" ">
-      <label class="course">Course units:   <input class="course"  type="text" name="unit<%=i%>"  class="unit"></label>
-
-    </li>
-
-  </ul>
+      </select>
+    </div>
 
 
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">
+        <h3>Select Department</h3>
+      </label>
+      <select class="form-control" id="exampleFormControlSelect1"  name="Department" >
+        <option>none</option>
+        <%for(var i=0 ;i <Department.length;i++){%>
+        <option><%=Department[i]%></option>
+        <%}%>
+
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">
+        <h3>Select Course</h3>
+      </label>
+      <select class="form-control" id="exampleFormControlSelect1"  name="Course">
+        <option>none</option>
+        <%for(var i=0 ;i <Course.length;i++){%>
+        <option><%=Course[i]%></option>
+        <%}%>
+
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">
+        <h3>Select Level</h3>
+      </label>
+      <select class="form-control" id="exampleFormControlSelect1"  name="Level">
+        <option>none</option>
+        <option>100</option>
+        <option>200</option>
+        <option>300</option>
+        <option>400</option>
+        <option>500</option>
+        <option>600</option>
+
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">
+        <h3>Select Semester</h3>
+      </label>
+      <select class="form-control" id="exampleFormControlSelect1"  name="Semester">
+        <option>none</option>
+        <option>1st</option>
+        <option>2nd</option>
 
 
-<%}%>
-</div>
-</form>
+      </select>
+    </div>
 
+
+
+      <em style="color: red;"><%=error%></em>
+        <button type="submit" class="btn btn-lg btn-dark" style="">Submit </button>
+      </form>
+    </div>
 <%- include("partials/footer");-%>

@@ -1,0 +1,79 @@
+<%-include("partials/header");-%>
+<div id="head">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark ">
+      <!-- bg-dark-->
+      <a class="navbar-brand" href="" style="padding-left: 30px; ">
+        CALCULATOR
+      </a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+
+        <ul class="navbar-nav  ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">About Us </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cta">Start</a>
+
+          </li>
+          
+        </ul>
+
+      </div>
+      
+    </nav>
+  
+</div>
+<div class="container mt-5">
+<h1 style="color: white; text-align: center;">Login</h1>
+
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card">
+      <div class="card-body">
+
+        <!-- Makes POST request to /login route -->
+        <form action="/login" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input style="border-top: none; border-left: none; box-shadow: none; " placeholder="Enter Email" type="email" class="form-control" name="username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input style="border-top: none; border-left: none; box-shadow: none; " placeholder="Enter Password" type="password" class="form-control" name="password">
+          </div>
+          <div class ="login-button">
+          <button type="submit" class="btn btn-lg btn-dark ">Login</button>
+          <a href="">forgot password?</a>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body google-login">
+        <h6>OR</h6>
+        <a class="btn btn-lg btn-outline-danger"  href="/auth/google" role="button">
+          <!-- <i class="fab fa-google"></i> -->
+           Google
+        </a>
+      </div>
+    </div>
+  </div> 
+
+</div>
+</div>
+
+
+<%- include("partials/footer");-%>

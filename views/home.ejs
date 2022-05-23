@@ -1,27 +1,98 @@
 <%-include("partials/header");-%>
-<form class="text-center fontUbuntu" action="/" method="post">
- <h1 id="title">Gpa Simulator</h1>
- <!-- <a type="button" name="button" class="btn btn-lg btn-outline-light" href="simulate.html">Click to start</a> -->
- <div class="row ">
-   <div id="" class="col-lg-12   ">
+<div id="head">
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-md navbar-dark ">
+    <!-- bg-dark-->
+    <a class="navbar-brand" href="" style="padding-left: 30px; ">
+      CALCULATOR
+    </a>
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-     <div class="col-lg-12  ">
-       <label class ="label">Number of Courses:
-       <input type="text" name="amountOfCourses" value="" class="">
-       </label>
-       <button type="submit" class="btn btn-outline-light ">+</button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
 
-     </div>
 
-   </div>
- </div>
+      <ul class="navbar-nav  ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">About Us </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cta">Start</a>
 
-<!-- <img class="size" src="image/bicycle.png" alt="bicycle"> -->
-</form>
+        </li>
 
-<!-- <video class ="video" width="320" height="240" controls autoplay>
-  <source src="videos/countDown.mp4" type="video/mp4">
-  <!-- <source src=".ogg" type="video/ogg"> -->
-  <!-- Your browser does not support the video tag.
-</video> -->
+      </ul>
+
+    </div>
+
+  </nav>
+
+</div>
+<div class="section-title">
+<div class="title">
+<h1>Plan your Semester</h1>
+<h1>with us</h1>
+<h6 class="typewriter">Calculate your CGPA and prepare for the semester</h6>
+</div>
+<div class="title-button">
+<a class="btn btn-lg button1 " href="/login">Login</a>
+<a class="btn btn-lg button2 " href="/authenticate">Register</a>
+</div>
+<div class="title-image">
+<!-- <h1>hello</h1> -->
+<img class="image"src="image/calc-app.png" alt="hello">
+</div>
+</div>
+<section id="testimonials">
+<div id="testimonial-carousel" class="carousel slide" data-bs-ride="false" style=" heigth: 100%;">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <h2>“Don’t let what you cannot do interfere with what you can do.”</h2>
+    <h6> — John Wooden</h6>
+    <img class="testimonial-image"
+      src="image/person-determined.png"
+      alt="dog-profile">
+    <!-- <em>Pebbles, New York</em> -->
+
+  </div>
+  <div class="carousel-item">
+    <h2 class="testimonial-text">“The man who does not read books has no advantage over the one who cannot read them.”</h2>
+    <h6> — Mark Twain</h6>
+    <img class="testimonial-image" src="image/effort-determination.png" alt="lady-profile">
+    <!-- <em>Beverly, Illinois</em> -->
+  </div>
+  <div class="carousel-item">
+    <h2 class="testimonial-text">"The more that you read, the more things you will know, the more that you learn, the more places you’ll go.” </h2>
+    <h6>— Dr. Seuss</h6>
+    <img style="width: 250px;"class="testimonial-image" src="image/determination.png" alt="lady-profile">
+    <!-- <em>Beverly, Illinois</em> -->
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+
+
+
+
+</section>
+
+
+<footer class="footer">
+
+Brougth to you by force ©
+</footer>
+
+
 <%- include("partials/footer");-%>

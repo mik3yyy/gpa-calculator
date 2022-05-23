@@ -1,0 +1,36 @@
+<%-include("partials/header");-%>
+
+<div class="INPUT">
+<div class="title">
+
+
+<h1 class="input-h1">Input Score</h1>
+<em class="em" style="color: red"><%=error%></em>
+</div>
+<form class="" action="/input" method="post">
+
+
+<div class="row input-div" style="">
+  <%for(var i=0;i<Course.length;i++){%>
+  <div class="col-lg-3 col-md-6 col-sm-12 input-page" style=" ">
+
+    <label class="input-page-label">Course: <%=Course[i]%> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Unit: <%=Unit[i]%> </label>
+    <input type="text" name="grade<%=i%>"  class="input-page-input" placeholder="i.e 80.5">
+    <em >input score from 1-100</em>
+
+  </div>
+  <%}%>
+</div>
+<div class="CGPA">
+
+
+<label style="display: block">Input current CGPA (optional)</label>
+<input class="input-page-input"type="text" name="CGPA" value="" placeholder="i.e 4.53 ">
+
+</div>
+<button class="input-submit btn btn-lg"type="submit" name="button">Submit</button>
+</form>
+</div>
+
+
+<%- include("partials/footer");-%>

@@ -1,26 +1,137 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Gpa</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Google fonts(line 8-10) -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+ <title>Gpa</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- fontawesome  -->
-  <script src="https://kit.fontawesome.com/9f5bebe1cf.js" crossorigin="anonymous"></script>
-  <!-- java script import to enable(line 18) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+ <link rel="stylesheet" href="public/css/styles.css">
+ <!-- fontawesome  -->
+ <script src="https://kit.fontawesome.com/9f5bebe1cf.js" crossorigin="anonymous"></script>
+ <!-- java script import to enable(line 18) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="body simulate">
+<body class="">
+  
+  <div id="head">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-md navbar-dark ">
+          <!-- bg-dark-->
+          <a class="navbar-brand" href="" style="padding-left: 30px; ">
+            CALCULATOR
+          </a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+  
+  
+            <ul class="navbar-nav  ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">About Us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cta">Start</a>
+  
+              </li>
+              
+            </ul>
+  
+          </div>
+          
+        </nav>
+      
+  </div>
+<div class="section-title">
+  <div class="title">
+    <h1>Plan your Semester</h1>
+    <h1>with us</h1>
+    <h6 class="typewriter">Calculate your CGPA and prepare for the semester</h6>
+  </div>
+  <div class="title-button">
+    <button class="btn btn-lg button1 ">Login</button>
+    <button class="btn btn-lg button2 ">Register</button>
+  </div>
+  <div class="title-image">
+    <!-- <h1>hello</h1> -->
+      <img class="image"src="public/image/calc-app.png" alt="hello">
+  </div>
+</div>  
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false" style=" heigth: 100%;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>“Don’t let what you cannot do interfere with what you can do.”</h2>
+          <h6> — John Wooden</h6>
+          <img class="testimonial-image"
+            src="public/image/person-determined.png"
+            alt="dog-profile">
+          <!-- <em>Pebbles, New York</em> -->
+
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">“The man who does not read books has no advantage over the one who cannot read them.”</h2>
+          <h6> — Mark Twain</h6>
+          <img class="testimonial-image" src="public/image/effort-determination.png" alt="lady-profile">
+          <!-- <em>Beverly, Illinois</em> -->
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">"The more that you read, the more things you will know, the more that you learn, the more places you’ll go.” </h2>
+          <h6>— Dr. Seuss</h6>
+          <img style="width: 250px;"class="testimonial-image" src="public/image/determination.png" alt="lady-profile">
+          <!-- <em>Beverly, Illinois</em> -->
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
 
-<form class="" action="/" method="post">
+ 
+
+
+  </section>
+
+
+  <footer class="footer">
+    
+    Brougth to you by force © 
+  </footer>
+
+
+
+
+
+
+<!-- //jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- //Javascript -->
+<script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
+<!-- <form class="" action="/" method="post">
   <h1 id="title">Welcome to Gpa Simulator</h1>
   <!-- <a type="button" name="button" class="btn btn-lg btn-outline-light" href="simulate.html">Click to start</a> -->
-  <div class="row">
+  <!-- <div class="row">
     <div id="" class="col-lg-12  text-primary ">
       <h1>Select setting</h1>
       <div class="col-lg-12 col-sm-6 ">
@@ -34,13 +145,4 @@
   </div>
 
 
-</form>
-
-
-  <!-- //jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- //Javascript -->
-  <script src="index.js" charset="utf-8"></script>
-</body>
-
-</html>
+</form> -->
