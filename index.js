@@ -51,7 +51,6 @@ app.use(passport.session());
 
 mongoose.connect("mongodb+srv://admin-michael:Test123@cluster0.v9j4t.mongodb.net/gpaDB");
 const userSchema = new mongoose.Schema({
-  email: String,
   password: String,
   googleId: String,
   name: String
