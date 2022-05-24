@@ -304,6 +304,7 @@ function Babcock() {
               Course=["GEDS 312","COSC 203","COSC 309","COSC 312", "COSC 360", "COSC 328"];
               Unit =[2,3,3,3,6,1];
             } else if (level === "400" && semester === "1st") {
+              Course=["GEDS  "]
 
             } else if (level === "400" && semester === "2nd") {
 
@@ -324,6 +325,47 @@ function Babcock() {
             if (level === "100" && semester === "1st") {
               Course = ["PHYS 101", "ACCT 101", "MATH 101 ", "STAT 101 ", "cosc107", "cosc101", "GEDS 107", "GEDS 101", "GEDS 105", "GEDS 131"];
               Unit = [3, 3, 3, 2, 2, 3, 2, 2, 2, 2];
+
+            } else if (level === "100" && semester === "2nd") {
+              Course = ["GEDS 112", "GEDS 122", "GEDS 131 ", "GEDS 134", "PHYS 102 ", "ACCT 101", "MATH 102", "COSC 112", "COSC 108"];
+              Unit = [2, 3, 2, 2, 3, 3, 3, 3, 1];
+
+            } else if (level === "200" && semester === "1st") {
+              Course=["GEDS 205","GEDS 221","GEDS 260","COSC 203","COSC 205","MATH 203","STAT 201","ECON 101","COSC 209"];
+              Unit=[3,2,2,3,3,3,2,3,1];
+
+
+            } else if (level === "200" && semester === "2nd") {
+              Course=["GEDS 200","GEDS 222","GEDS 270","COSC 206","COSC 212","COSC 226","ECONS 102","ITGY 212","COSC 222"];
+              Unit=[2,2,2,3,3,3,3,2,1];
+
+            } else if (level === "300" && semester === "1st") {
+
+
+
+            } else if (level === "300" && semester === "2nd") {
+
+            } else if (level === "400" && semester === "1st") {
+
+            } else if (level === "400" && semester === "2nd") {
+
+            }
+
+            // res.redirect("/input");
+
+
+              NoOfCourses=Unit.length;
+
+
+
+
+
+          }
+          if (course === "Computer Technology") {
+
+            if (level === "100" && semester === "1st") {
+              Course = ["PHYS 101", "ELECT 101", "MATH 101 ", "STAT 101 ", "cosc107", "cosc101", "GEDS 107", "GEDS 101", "GEDS 105", "GEDS 131","CHEM 101"];
+              Unit = [3, 2, 3, 2, 2, 3, 2, 2, 2, 2,3];
 
             } else if (level === "100" && semester === "2nd") {
               Course = ["GEDS 112", "GEDS 122", "GEDS 131 ", "GEDS 134", "PHYS 102 ", "ACCT 101", "MATH 102", "COSC 112", "COSC 108"];
@@ -358,7 +400,6 @@ function Babcock() {
 
 
           }
-
 
 
 

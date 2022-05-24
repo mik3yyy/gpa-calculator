@@ -1,6 +1,6 @@
 
 var BU_Department = ["Computer Science"]
-var Computer_Science = ["Computer Science", "Computer Information System", "Software Engineering"]
+var Computer_Science = ["Computer Science", "Computer Information System", "Computer Technology"]
 var BU_Course=[...Computer_Science];
 
 
