@@ -36,7 +36,7 @@
 <h1 style="color: white; text-align: center;">Login</h1>
 
 <div class="row">
-  <div class="col-sm-8">
+  <div class="col-md-12 col-lg-12">
     <div class="card">
       <div class="card-body">
 
@@ -51,26 +51,23 @@
             <input style="border-top: none; border-left: none; box-shadow: none; " placeholder="Enter Password" type="password" class="form-control" name="password">
           </div>
           <div class ="login-button">
-          <button type="submit" class="btn btn-lg btn-dark ">Login</button>
-          <a href="">forgot password?</a>
+          <button style="width: 100%;" type="submit" class="btn btn-lg btn-dark ">Login</button>
+          <!-- <a href="">forgot password?</a> -->
           </div>
+          <br>
+          <h6 style="text-align:center">OR</h6>
+          <a style="text-align:center; width: 100%;" class="btn btn-lg btn-primary"  href="/auth/google" role="button">
+            <img style="height: 30px; width: 30px;" src="image/google-logo.png" alt="">
+             Sign in with Google
+          </a>
         </form>
+
 
       </div>
     </div>
   </div>
 
-   <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body google-login">
-        <h6>OR</h6>
-        <a class="btn btn-lg btn-outline-danger"  href="/auth/google" role="button">
-          <!-- <i class="fab fa-google"></i> -->
-           Google
-        </a>
-      </div>
-    </div>
-  </div> 
+ 
 
 </div>
 </div>

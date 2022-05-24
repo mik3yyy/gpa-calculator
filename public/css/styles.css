@@ -182,6 +182,15 @@ body .INPUT{
   font-size: 16px;
 }
 
+.auth-google-div{
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #020102;  
+}
 
 @media only screen and  (max-width: 600px) {
 
@@ -687,11 +696,15 @@ body .INPUT{
     /* background-color: #020102 ; */
   }
    /* LOGIN PAGE */
-   .col-sm-4{
+   /* .col-sm-4{
     padding: 0 0 0 0;
     height: 222px;
-    /* background-color: #ffffff; */
+    /* background-color: pink; 
     border-style: none;
+  } */
+   /* LOGIN PAGE */
+   .col-lg-12{
+    align-items: center;
   }
   .col-sm-8{
     padding: 0 0 0 0;
@@ -699,9 +712,9 @@ body .INPUT{
     border-style: none;
   }
   .container{
-    /* background-color: #DDDDDD; */
+    /* background-color: pink; */
     text-align: center;
-    width: 50%;
+    width: 100%;
 
   }
 
@@ -724,6 +737,7 @@ body .INPUT{
 
 
   @media only screen and  (min-width: 772px) and (max-width: 1200px){
+
       /* SETTING PAGE */
       .setting{
         width:60%;
@@ -740,6 +754,7 @@ body .INPUT{
 
 
   }
+  
   .input-page{
     margin: 1rem;
     border-radius: 20px;

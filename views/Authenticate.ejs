@@ -3,19 +3,19 @@
     <form class="auth-form" onsubmit="sendEmail(); reset(); return false; " action="/" method="post" >
       <h3 class="auth-h3">Enter Email</h3>
       <Input class="auth-input" type="email"name="email" id="email" placeholder="Your email" required> </Input>
-      <button type="submit">Send</button>
+      <button class="btn  btn-dark" type="submit">Send</button>
+      <br>
+      <h6 style="text-align: center;">OR</h6>
+      <a class="btn btn-lg btn-primary"  href="/auth/google" role="button">
+        <!-- <i class="fab fa-google"></i> -->
+         <img style="height: 30px; width: 30px;" src="image/google-logo.png" alt=""> 
+          Sign up with Google
+      </a>
     </form>
-    <div class="card">
-      <div class="card-body google-login col-sm-12" >
-        <h6>OR</h6>
-        <a class="btn btn-lg btn-outline-danger"  href="/auth/google" role="button">
-          <!-- <i class="fab fa-google"></i> -->
-           Google
-        </a>
-      </div>
-    </div>
+    
 
   </div>
+
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
  function sendEmail(){
