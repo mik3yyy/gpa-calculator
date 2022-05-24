@@ -50,6 +50,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 mongoose.connect("mongodb+srv://admin-michael:Test123@cluster0.v9j4t.mongodb.net/gpaDB");
+// mongoose.connect("mongodb://127.0.0.1:27017/userDB");
 const userSchema = new mongoose.Schema({
   password: String,
   googleId: String,
@@ -295,6 +296,47 @@ function Babcock() {
               Unit = [2, 2, 2, 3, 3, 3, 3, 3, 1];
 
             } else if (level === "300" && semester === "1st") {
+              Course=["GEDS 317","GEDS 280","COSC 303","COCS 309","COSC 317","COSC 325","COSC 327", "COSC 335","ITGY 307","COSC 305"];
+              Unit=[3,2,3,3,2,2,2,2,3,1];
+
+
+            } else if (level === "300" && semester === "2nd") {
+              Course=["GEDS 312","COSC 203","COSC 309","COSC 312", "COSC 360", "COSC 328"];
+              Unit =[2,3,3,3,6,1];
+            } else if (level === "400" && semester === "1st") {
+
+            } else if (level === "400" && semester === "2nd") {
+
+            }
+
+            // res.redirect("/input");
+
+
+              NoOfCourses=Unit.length;
+
+
+
+
+
+          }
+          if (course === "Computer Information System") {
+
+            if (level === "100" && semester === "1st") {
+              Course = ["PHYS 101", "ACCT 101", "MATH 101 ", "STAT 101 ", "cosc107", "cosc101", "GEDS 107", "GEDS 101", "GEDS 105", "GEDS 131"];
+              Unit = [3, 3, 3, 2, 2, 3, 2, 2, 2, 2];
+
+            } else if (level === "100" && semester === "2nd") {
+              Course = ["GEDS 112", "GEDS 122", "GEDS 131 ", "GEDS 134", "PHYS 102 ", "ACCT 101", "MATH 102", "COSC 112", "COSC 108"];
+              Unit = [2, 3, 2, 2, 3, 3, 3, 3, 1];
+
+            } else if (level === "200" && semester === "1st") {
+
+
+
+            } else if (level === "200" && semester === "2nd") {
+
+
+            } else if (level === "300" && semester === "1st") {
 
 
 
@@ -316,6 +358,7 @@ function Babcock() {
 
 
           }
+
 
 
 
