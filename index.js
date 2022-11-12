@@ -39,6 +39,9 @@ app.use(bodyParser.urlencoded({
 
 var amountOfCourses, num, number;
 
+// app.set(num,20);
+// app.set("num",20);
+// console.log(num);
 
 app.use(session({
   secret: 'our little secret',
