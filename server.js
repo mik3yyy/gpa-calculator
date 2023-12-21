@@ -52,7 +52,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://admin-michael:Test123@cluster0.v9j4t.mongodb.net/gpaDB");
+mongoose.connect("mongodb+srv://Michael:CHInedum12@cluster0.rl2r1sh.mongodb.net/");
 // mongoose.connect("mongodb://127.0.0.1:27017/userDB");
 const userSchema = new mongoose.Schema({
   password: String,
